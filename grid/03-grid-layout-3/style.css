@@ -17,20 +17,31 @@
 
 .header {
   background-color: #393f4d;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .logo {
+  justify-self: start;
 }
 
 .menu {
+  align-self: center;
+
 }
 
 .menu ul {
+  display:grid;
+  list-style: none;
+  /* grid-template-rows: 1fr; */
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  
 }
 
 .sidebar {
